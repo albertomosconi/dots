@@ -1,2 +1,2 @@
 # ...
-my linux dotfiles
+welcome to my ~
