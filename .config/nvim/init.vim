@@ -1,7 +1,8 @@
 runtime partials/base.vim " base config
 runtime partials/statusline.vim " statusline config
-runtime partials/keymaps.vim " keymaps" PLUGINS
+runtime partials/keymaps.vim " keymaps
 
+" PLUGINS
 call plug#begin('$XDG_CONFIG_HOME/nvim/plugged')
 
     runtime partials/latex.vim " latex
