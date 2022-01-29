@@ -1,7 +1,8 @@
 #!/bin/sh
 
-xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources & xrdbpid=$!
 xrandr --dpi 96 &
+setbg &
+xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources & xrdbpid=$!
 
 autostart="xcompmgr dunst unclutter pipewire"
 for program in $autostart; do
