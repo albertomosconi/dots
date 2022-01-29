@@ -1,7 +1,6 @@
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.config/zsh/histfile
-HISTSIZE=1000
-SAVEHIST=10000
+HISTFILE=~/.cache/zsh/history
+HISTSIZE=1000000
+SAVEHIST=1000000
 setopt autocd extendedglob nomatch
 unsetopt beep notify
 bindkey -v
@@ -26,7 +25,7 @@ autoload -U colors && colors
 # PS1="%B%(0?.%F{green}.%F{red})%T %F{blue}%~%f "
 PS1="%B%(0?.%F{green}.%F{red})[%T] %F{12}%1~ >> %f "
 
-[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc"
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
 
 #fortune
 #neofetch

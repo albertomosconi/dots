@@ -1,0 +1,11 @@
+#!/bin/sh
+
+xrandr --dpi 96 &
+
+autostart="xcompmgr dunst unclutter pipewire"
+for program in $autostart; do
+	pidof -s "$program" || setsid -f "$program"
+done >/dev/null 2>&1
+
+# Ensure that xrdb has finished running before moving on to start the WM/DE.
+[ -n "$xrdbpid" ] && wait "$xrdbpid"
