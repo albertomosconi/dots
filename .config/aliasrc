@@ -24,7 +24,7 @@ alias ga="git add"
 alias gc="git commit"
 alias gps="git push"
 alias gpl="git pull"
-alias gcm="git checkout master"
+alias gcm="git checkout main"
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias gcl="git clone"
 
