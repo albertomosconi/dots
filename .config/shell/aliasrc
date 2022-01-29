@@ -7,7 +7,6 @@ alias rm="rm -vI"
 alias mv="mv -iv"
 alias cp="cp -iv"
 alias mkd="mkdir -pv"
-alias sp="speedtest"
 
 # pacman
 alias pas="sudo pacman -S"
@@ -25,7 +24,6 @@ alias gc="git commit"
 alias gps="git push"
 alias gpl="git pull"
 alias gcm="git checkout main"
-alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias gcl="git clone"
 
 # other
@@ -39,19 +37,3 @@ alias sds="$HOME/.local/bin/status"
 alias im="$HOME/Pictures"
 alias dl="$HOME/Downloads"
 alias cfg="cd $XDG_CONFIG_HOME"
-
-# direct edit configs
-alias ecnvim="$EDITOR $XDG_CONFIG_HOME/nvim/init.vim"
-
-# mining
-alias mine="t-rex -a kawpow -o stratum-ravencoin.flypool.org:3333 -u RR9AS1po74Mtjvz43E9MYfWvV7P9grCNPn -p x"
-alias pre="$HOME/Documents/presearch-bot/main.py"
-
-# keyboard
-alias keys="xmodmap $XDG_CONFIG_HOME/.Xmodmap"
-
-# anime
-alias ani="ani-cli"
-
-# general
-alias ok="xmodmap $XDG_CONFIG_HOME/.Xmodmap && t-rex -a kawpow -o stratum-ravencoin.flypool.org:3333 -u RR9AS1po74Mtjvz43E9MYfWvV7P9grCNPn -p x"
