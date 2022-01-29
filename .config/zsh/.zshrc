@@ -29,5 +29,5 @@ PS1="%B%(0?.%F{green}.%F{red})[%T] %F{12}%1~ >> %f "
 
 #fortune
 #neofetch
-fm6000 -c random
+#fm6000 -c random
 #source /usr/share/nvm/init-nvm.sh
