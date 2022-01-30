@@ -1,12 +1,12 @@
 HISTFILE={$XDG_CACHE_HOME:-$HOME/.cache}/zsh/history
 HISTSIZE=1000000
 SAVEHIST=1000000
+
 setopt autocd extendedglob nomatch
 unsetopt beep notify
 bindkey -v
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-# zstyle :compinstall filename '/home/alberto/.config/zsh/.zshrc'
+stty stop undef
+zle_highlight=('paste:none')
 
 autoload -Uz compinit
 
