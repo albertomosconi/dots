@@ -1,0 +1,4 @@
+#!/bin/sh
+
+[ -z $2 ] && git clone "https://github.com/$1"
+[ -n $2 ] && git clone "https://github.com/$1" "$2"
